@@ -1,0 +1,18 @@
+-- AlterTable
+ALTER TABLE "accounts"
+ALTER COLUMN "refresh_token" SET DATA TYPE TEXT,
+ALTER COLUMN "access_token" SET DATA TYPE TEXT,
+ALTER COLUMN "scope" SET DATA TYPE TEXT,
+ALTER COLUMN "id_token" SET DATA TYPE TEXT,
+ALTER COLUMN "oauth_token_secret" SET DATA TYPE TEXT,
+ALTER COLUMN "oauth_token" SET DATA TYPE TEXT;
+
+-- AlterTable
+ALTER TABLE "sessions"
+ALTER COLUMN "session_token" SET DATA TYPE TEXT,
+ALTER COLUMN "access_token" SET DATA TYPE TEXT;
+
+-- AlterTable
+ALTER TABLE "verification_tokens"
+ALTER COLUMN "identifier" SET DATA TYPE TEXT,
+ALTER COLUMN "token" SET DATA TYPE TEXT;
