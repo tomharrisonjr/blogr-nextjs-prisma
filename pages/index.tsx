@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps = async () => {
       },
     },
   });
-  console.debug(feed)
+
   return {
     props: { feed },
     revalidate: 10,
@@ -32,7 +32,7 @@ const Blog: React.FC<Props> = (props) => {
         <main>
           {props.feed.map((post) => (
             <div key={post.id} className="post">
-              <Post post={post} />
+              <Post post={post}/>
             </div>
           ))}
         </main>

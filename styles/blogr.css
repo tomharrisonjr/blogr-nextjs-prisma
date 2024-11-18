@@ -1,20 +1,29 @@
-.post {
-    transition: box-shadow 0.1s ease-in;
+body {
+    margin: 0;
+    padding: 1rem;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
-.post:hover {
-    box-shadow: 1px 1px 3px #aaa;
+.button {
+    border: none;
+    border-radius: 0.125rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
 }
 
-.post {
-    margin-top: 2rem;
-}
-
-div {
+nav {
+    padding: .5rem;
+    background: #ececec;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+input,
+textarea {
+    font-size: 16px;
 }
 
 h1 {
@@ -43,37 +52,18 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.post {
+    transition: box-shadow 0.1s ease-in;
+    background: white;
+    padding: 1rem;
+}
+
+.post:hover {
+    box-shadow: 1px 1px 3px #aaa;
+}
+
 .bold {
     font-weight: bold;
-}
-
-div {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-}
-
-.left a[data-active='true'] {
-    color: gray;
-}
-
-a div {
-    margin-left: 1rem;
-}
-
-div {
-    text-decoration: none;
-    display: inline-block;
-}
-
-p {
-    display: inline-block;
-    font-size: 13px;
-    padding-right: 1rem;
-}
-
-a div {
-    margin-left: 1rem;
 }
 
 .right {
@@ -83,142 +73,5 @@ a div {
 .right div {
     border: 1px solid;
     padding: 0.5rem 1rem;
-    border-radius: 3px;
+    border-radius: 10px;
 }
-
-button {
-    border: none;
-}
-
-nav {
-    display: flex;
-    padding: 2rem;
-    align-items: center;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-}
-
-input,
-textarea {
-    font-size: 16px;
-}
-
-button {
-    cursor: pointer;
-}
-
-.layout {
-    padding: 0 2rem;
-}
-
-div {
-    color: inherit;
-    padding: 2rem;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-div {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.left a[data-active='true'] {
-    color: gray;
-}
-
-div div {
-    margin-left: 1rem;
-}
-
-
-.bold {
-    font-weight: bold;
-}
-
-    div {
-        text-decoration: none;
-        display: inline-block;
-    }
-
-    .left a[data-active='true'] {
-        color: gray;
-    }
-
-    div + div {
-        margin-left: 1rem;
-    }
-
-.right {
-    margin-left: auto;
-}
-
-div {
-    text-decoration: none;
-    display: inline-block;
-}
-
-    div + div {
-        margin-left: 1rem;
-    }
-
-    .right {
-        margin-left: auto;
-    }
-
-    .right div {
-        border: 1px solid white;
-        padding: 0.5rem 1rem;
-        border-radius: 3px;
-    }
-
-.post {
-    background: white;
-    transition: box-shadow 0.1s ease-in;
-}
-
-    .post:hover {
-        box-shadow: 1px 1px 3px #aaa;
-    }
-
-    .post + .post {
-        margin-top: 2rem;
-    }
-
-.page {
-    padding: 2rem;
-}
-
-    .actions {
-        margin-top: 2rem;
-    }
-
-    button {
-        background: #ececec;
-        border: 0;
-        border-radius: 0.125rem;
-        padding: 1rem 2rem;
-    }
-
-    button + button {
-        margin-left: 1rem;
-    }

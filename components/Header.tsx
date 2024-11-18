@@ -5,8 +5,7 @@ import { signOut, useSession } from 'next-auth/react';
 
 const Header: React.FC = () => {
   const router = useRouter();
-  const isActive: (pathname: string) => boolean = (pathname) =>
-    router.pathname === pathname;
+  const isActive: (pathname: string) => boolean = (pathname) => router.pathname === pathname;
 
   const { data: session, status } = useSession();
 
@@ -43,9 +42,9 @@ const Header: React.FC = () => {
     right = (
       <div className="right">
         <Link href="/api/auth/signin">
-          <div data-active={isActive('/signup')}>Log in</div>
+          <div className="button" data-active={isActive('/signup')}>Log in</div>
         </Link>
-       </div>
+      </div>
     );
   }
 
@@ -68,11 +67,11 @@ const Header: React.FC = () => {
           {session.user.name} ({session.user.email})
         </p>
         <Link href="/create">
-          <button>
+          <button className="button">
             <div>New post</div>
           </button>
         </Link>
-        <button onClick={() => signOut()}>
+        <button className="button" onClick={() => signOut()}>
           <div>Log out</div>
         </button>
       </div>
