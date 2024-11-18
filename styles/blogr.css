@@ -1,0 +1,224 @@
+.post {
+    transition: box-shadow 0.1s ease-in;
+}
+
+.post:hover {
+    box-shadow: 1px 1px 3px #aaa;
+}
+
+.post {
+    margin-top: 2rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background: #0070f3;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.left a[data-active='true'] {
+    color: gray;
+}
+
+a div {
+    margin-left: 1rem;
+}
+
+div {
+    text-decoration: none;
+    display: inline-block;
+}
+
+p {
+    display: inline-block;
+    font-size: 13px;
+    padding-right: 1rem;
+}
+
+a div {
+    margin-left: 1rem;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.right div {
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+button {
+    border: none;
+}
+
+nav {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+input,
+textarea {
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.layout {
+    padding: 0 2rem;
+}
+
+div {
+    color: inherit;
+    padding: 2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.left a[data-active='true'] {
+    color: gray;
+}
+
+div div {
+    margin-left: 1rem;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+    div {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .left a[data-active='true'] {
+        color: gray;
+    }
+
+    div + div {
+        margin-left: 1rem;
+    }
+
+.right {
+    margin-left: auto;
+}
+
+div {
+    text-decoration: none;
+    display: inline-block;
+}
+
+    div + div {
+        margin-left: 1rem;
+    }
+
+    .right {
+        margin-left: auto;
+    }
+
+    .right div {
+        border: 1px solid white;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+    }
+
+.post {
+    background: white;
+    transition: box-shadow 0.1s ease-in;
+}
+
+    .post:hover {
+        box-shadow: 1px 1px 3px #aaa;
+    }
+
+    .post + .post {
+        margin-top: 2rem;
+    }
+
+.page {
+    padding: 2rem;
+}
+
+    .actions {
+        margin-top: 2rem;
+    }
+
+    button {
+        background: #ececec;
+        border: 0;
+        border-radius: 0.125rem;
+        padding: 1rem 2rem;
+    }
+
+    button + button {
+        margin-left: 1rem;
+    }

@@ -48,37 +48,6 @@ const Draft: React.FC = () => {
           </a>
         </form>
       </div>
-      <style jsx>{`
-        div {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-        h1 {
-          text-align: center;
-        }
-        form {
-          width: 100%;
-          max-width: 500px;
-          margin-top: 2rem;
-          display: flex;
-          flex-direction: column;
-        }
-        input,
-        textarea {
-          margin-bottom: 1rem;
-          padding: 0.5rem;
-          border-radius: 0.25rem;
-          border: 1px solid #dcdcdc;
-          font-size: 1rem;
-        }
-        input[type="submit"] {
-          background: #0070f3;
-          color: white;
-          cursor: pointer;
-        }
-      `}</style>
     </Layout>
   );
 };
